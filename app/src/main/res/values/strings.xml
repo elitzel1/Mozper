@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Mozper</string>
+    <string name="logout">Cerrar sesión</string>
+
+    <!-- Login -->
+    <string name="username">Email</string>
+    <string name="password">Password</string>
+    <string name="username_hint">ejemplo@g.com</string>
+    <string name="login">Iniciar sesión</string>
+</resources>

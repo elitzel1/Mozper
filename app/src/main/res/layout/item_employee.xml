@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:padding="@dimen/space_normal">
+
+    <ImageView
+        android:id="@+id/employeeImageItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@mipmap/ic_launcher" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/nameLabelItem"
+        style="@style/TextAppearance.MaterialComponents.Subtitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginStart="@dimen/space_small"
+        app:layout_constraintStart_toEndOf="@id/employeeImageItem"
+        app:layout_constraintTop_toTopOf="@id/employeeImageItem"
+        tools:text="Marie Jane" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/descriptionLabelItem"
+        style="@style/TextAppearance.MaterialComponents.Subtitle2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray"
+        android:ellipsize="end"
+        android:maxLines="2"
+        app:layout_constraintStart_toStartOf="@id/nameLabelItem"
+        app:layout_constraintTop_toTopOf="@id/rateLabelItem"
+        app:layout_constraintEnd_toStartOf="@id/rateLabelItem"
+        tools:text="Here goes the description super large too see" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/rateLabelItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray"
+        style="@style/TextAppearance.MaterialComponents.Body1"
+        android:gravity="center_vertical"
+        android:drawablePadding="@dimen/space_small_50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="5"
+        android:drawableEnd="@drawable/ic_baseline_star_24"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
